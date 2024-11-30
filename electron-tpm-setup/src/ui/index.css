@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-adani bg-slate-50;
+  }
+
+  @font-face {
+    font-family: Adani Regular;
+    font-weight: 400;
+    src: url("../ui/assets/fonts/adani.ttf") format("truetype");
+  }
+}

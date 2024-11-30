@@ -1,0 +1,5 @@
+Install Nodejs Express Server location
+
+Windows = C:\Program Files\nodejs-express-server
+Linux = /usr/local/bin/nodejs-express-server
+Mac = /usr/local/bin/nodejs-express-server

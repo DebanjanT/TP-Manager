@@ -1,0 +1,16 @@
+{
+  "appId": "com.dtt.tpmsetup",
+  "files": ["dist-electron", "dist-react", "src/server"],
+  "icon": "./icon.png",
+  "extraResources": ["dist-electron/preload.cjs", "src/server/**/*"],
+  "mac": {
+    "target": "dmg"
+  },
+  "linux": {
+    "target": "AppImage",
+    "category": "Utility"
+  },
+  "win": {
+    "target": ["portable", "msi"]
+  }
+}
