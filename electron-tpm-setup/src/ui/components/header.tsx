@@ -5,8 +5,8 @@ type HeaderProps = {
 };
 const Header = ({ title = "TP Manager", badge }: HeaderProps) => {
   return (
-    <div className=" sticky top-0 z-50">
-      <div className="relative flex justify-between items-center px-4 py-2 bg-white border-b shadow">
+    <div className=" sticky top-0 z-50 bg-background">
+      <div className="relative flex justify-between items-center px-4 py-2  border-b shadow">
         {badge && (
           <p className="absolute right-2 top-0 border px-2 font-sans bg-slate-300 text-slate-600 font-bold text-sm">
             {badge}

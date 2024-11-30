@@ -1,6 +1,6 @@
 import { Route, Routes, useNavigate } from "react-router-dom";
 import "./App.css";
-import Login from "./pages/login";
+import Register from "./pages/register";
 import Sample from "./pages/sample";
 import { useEffect } from "react";
 
@@ -26,7 +26,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<Register />} />
         <Route path="/sample" element={<Sample />} />
       </Routes>
     </>
