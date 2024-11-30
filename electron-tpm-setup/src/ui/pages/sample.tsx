@@ -1,12 +1,16 @@
-import { Button } from "../../components/ui/button";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "../../components/ui/tooltip";
 import Header from "../components/header";
-import { FaDownload } from "react-icons/fa6";
+import { FaDownload, FaTrashCan, FaWpforms } from "react-icons/fa6";
 
 const Sample = () => {
   return (
     <div>
       <Header />
-      <Button>Hi</Button>
 
       <div className="container mx-auto my-4">
         <h1 className="text-xl font-extrabold">List Of T.P.s</h1>
@@ -131,8 +135,37 @@ const Sample = () => {
                   <p className="text-sm text-slate-700">28th Feb, 2024</p>
                 </td>
                 <td className="py-2 px-3 border-b border-slate-200">
-                  <div className="flex justify-center items-center gap-1">
-                    <FaDownload className="text-slate-700 " />
+                  <div className="flex justify-center items-center gap-3">
+                    <TooltipProvider>
+                      <Tooltip delayDuration={100}>
+                        <TooltipTrigger>
+                          <FaDownload className="w-5 h-5" />{" "}
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Download TP</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                    <TooltipProvider>
+                      <Tooltip delayDuration={100}>
+                        <TooltipTrigger>
+                          <FaWpforms className="w-5 h-5" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Add an entry</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                    <TooltipProvider>
+                      <Tooltip delayDuration={100}>
+                        <TooltipTrigger>
+                          <FaTrashCan className="w-6 h-6 text-red-600 border rounded-full border-red-700 p-1 bg-red-100 " />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Delete Mother TP</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
                   </div>
                 </td>
               </tr>

@@ -6,7 +6,7 @@ import { getPreloadPath } from "./pathResolver.js";
 app.on("ready", () => {
   const mainWindow = new BrowserWindow({
     height: 800,
-    width: 800,
+    width: 900,
     title: "TPM Setup",
     resizable: true,
     center: true,
